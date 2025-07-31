@@ -8,7 +8,7 @@ class Employee:
         return self.__name
     
     def works(self):
-        print(f"{self.name} works")
+        print(f"{self.name} works - method from Employee class")
 
 class Student:
 
@@ -20,7 +20,7 @@ class Student:
         return self.__name
     
     def study(self):
-        print(f"{self.name} study")
+        print(f"{self.name} study - method from Student class")
 
 
 class WorkandStudy(Employee, Student):

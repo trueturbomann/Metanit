@@ -1,7 +1,7 @@
 class Person:
  
     def __init__(self, name):
-        self.__name = name   
+        self.__name = name   # имя человека
  
     @property
     def name(self):
@@ -19,12 +19,11 @@ class Employee(Person):
 
     def display_info(self):
         super().display_info()
-        print(f"Company {self.company}")
+        print(f"Company: {self.company}")
 
     def work(self):
         print(f"{self.name} works {self.company}")
 
-ted = Employee("Alpha", "VAZ")
+ted = Employee("Andrew", "VAZSYSTEM")
 ted.display_info()
 ted.work()
-

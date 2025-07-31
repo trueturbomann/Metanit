@@ -21,7 +21,6 @@ class Employee(Person):
 
 tom = Employee("Tom")
 print(tom.name)
-
 tom.display_info()
 tom.works()
         
